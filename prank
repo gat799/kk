@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBSE Exam Results 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 100px;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+        }
+        .header {
+            background-color: #00bcd4; /* Aqua color */
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+        }
+        .header img {
+            max-width: 150px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 8px;
+        }
+        .header h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #777;
+        }
+        .footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 30px;
+            background: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            z-index: 9999;
+            border-radius: 8px;
+            font-size: 22px;
+            color: red;
+        }
+        .logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        input, button, select {
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px;
+            width: 80%;
+            max-width: 400px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        label {
+            font-size: 16px;
+            display: block;
+            margin-top: 10px;
+        }
+        .captcha {
+            margin: 20px 0;
+        }
+        .disclaimer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #555;
+            text-align: justify;
+        }
+        body {
+            margin-top: 80px; /* To make space for the fixed header */
+        }
+    </style>
+    <script>
+        function checkResult() {
+            const rollNumber = document.getElementById('rollNumber').value;
+            const schoolNumber = document.getElementById('schoolNumber').value;
+            const admitCardId = document.getElementById('admitCardId').value;
+            const dob = document.getElementById('dob').value;
+            const captcha = document.getElementById('captcha').value;
+            
+            if (rollNumber && schoolNumber && admitCardId && dob && captcha === '7X5B') {
+                document.querySelector('.popup').style.display = 'block';
+                setTimeout(() => {
+                    window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"; // Rickroll link
+                }, 2000); // Redirect after 2 seconds
+            } else {
+                alert('Please enter valid details and captcha.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <img src="https://www.ipsedu.in/blog/wp-content/uploads/2023/05/cbse.png" alt="CBSE Logo">
+        <h2>Examination Results 2025</h2>
+    </div>
+    <h1>CBSE Exam Results 2025</h1>
+    <label for="rollNumber">Roll Number:</label>
+    <input type="text" id="rollNumber" placeholder="Enter Roll Number">
+    
+    <label for="schoolNumber">School Number:</label>
+    <input type="text" id="schoolNumber" placeholder="Enter School Number">
+    
+    <label for="admitCardId">Admit Card ID:</label>
+    <input type="text" id="admitCardId" placeholder="Enter Admit Card ID">
+    
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob">
+    
+    <div class="captcha">
+        <label for="captcha">Enter the code shown: <strong>7X5B</strong></label>
+        <input type="text" id="captcha" placeholder="Enter captcha">
+    </div>
+    
+    <button onclick="checkResult()">Submit</button>
+    
+    <div class="popup">It's April Fools, retard</div>
+    
+    <div class="footer">
+        <p>© 2025 CBSE Board | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+    </div>
+    
+    <div class="disclaimer">
+        <p>Disclaimer: Neither NIC nor CBSE is responsible for any inadvertent error that may have crept in the results being published on Net. The results published on net are for immediate information to the examinees. These cannot be treated as original mark sheets. Original mark sheets have been issued by the Board separately.</p>
+    </div>
+</body>
+</html>
